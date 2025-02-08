@@ -1,0 +1,219 @@
+import math
+# Main Menu :
+print("Welcome To P.D.O.S 0.1.5_prototype3 (Python Desk Operating System), Type One Of the Numbers Below For Each Command :")
+print("1. Calculator ")
+print("2. About")
+print("3. Shut Down ")
+UserInput = int(input(">"))
+# Shut Down :
+while UserInput :
+	if UserInput == 3 :
+		print("Are You Sure You Want To Shut Down? :")
+		print("1. Yes / 2.No ")
+		UserInput = int(input(">"))
+		if UserInput == 1 :
+			print("• Shutting Down... •")
+			break
+		elif UserInput == 2 :
+			print("• Task Cancelled •")
+			print("1. Calculator ")
+			print("3. About")
+			print("0. Shut Down ")
+			UserInput = int(input(">"))
+		else :
+			print("× Invalid Task ×")
+			UserInput = int(input(">"))
+# Calculator :
+ # Main Menu :
+	elif UserInput == 1 :
+		print("Welcome To The Calculator, Type One Of Numbers Below For Eash Task To Preform :")
+		print("1. Basic Calculating")
+		print("2. Square Area")
+		print("3. Circle Diameter")
+		print("4. Circle Area")
+		print("5. triangle hypotenuse")
+		UserInputCalc = int(input(">"))
+ # Calculating :
+  # Basic Calculator :  	
+		while UserInputCalc :
+			if UserInputCalc == 1 :
+				Num1 = float(input("Enter Your First Number :"))
+				Num2 = float(input("Enter Your Second Number :"))
+				print("What Operator You Prefer? :")
+				Operator = int(input("1. Addition + / 2. Subtraction - / 3. multiplication * / 4. division / :"))
+				if Operator == 1 :
+					Operator = "+"
+					Result = (Num1 + Num2)
+				elif Operator == 2 :
+					Operator = "-"
+					Result = (Num1 - Num2)
+				elif Operator == 3 :
+					Operator = "*"
+					Result = (Num1 * Num2)
+				elif Operator == 4 :
+					Operator = "/"
+					Result = (Num1 / Num2)
+				else :
+					print("× Invalid Operator ×")
+					Num1 = float(input("Enter Your First Number :"))
+					Num2 = float(input("Enter Your Second Number :"))
+					print("What Operator You Prefer? :")
+					Operator = int(input("1. Addition + / 2. Subtraction - / 3. multiplication * / 4. division / :"))
+				print(f"{Num1} {Operator} {Num2} = {Result}!")
+				print("1. Basic Calculating")
+				print("2. Square Area")
+				print("3. Circle Diameter")
+				print("4. Circle Area")
+				print("5. triangle hypotenuse")
+				UserInputCalc = int(input(">"))
+  # Square Area Calculator :
+			elif UserInputCalc == 2 :
+				Side = float(input("Enter The Side Of Your Square :"))
+				print("What Unit You Prefer? :")
+				Unit = int(input("1. cm² / 2. m² / 3. km² :"))
+				Area = pow(Side ,2)
+				if Unit == 1 :	
+					print(f"The Square Area is :{round(Area,2):5}cm²")
+					print("1. Basic Calculating")
+					print("2. Square Area")
+					print("3. Circle Diameter")
+					print("4. Circle Area")
+					print("5. triangle hypotenuse")
+					UserInputCalc = int(input(">"))
+				elif Unit == 2 :	
+					print(f"The Square Area is :{round(Area,2):5}m²")
+					print("1. Basic Calculating")
+					print("2. Square Area")
+					print("3. Circle Diameter")
+					print("4. Circle Area")
+					print("5. triangle hypotenuse")
+					UserInputCalc = int(input(">"))
+				elif Unit == 3 :	
+					print(f"The Square Area is :{round(Area,2):5}km²")
+					print("1. Basic Calculating")
+					print("2. Square Area")
+					print("3. Circle Diameter")
+					print("4. Circle Area")
+					print("5. triangle hypotenuse")
+					UserInputCalc = int(input(">"))
+				else :
+					print("× Invalid Values Or Operator ×")
+					Side = float(input("Enter The Side Of Your Square :"))
+					print("What Unit You Prefer? :")
+					Unit = int(input("1. cm² / 2. m² / 3. km² :"))
+					Area = pow(Side ,2)
+  # Circle Diameter Calculator :
+			elif UserInputCalc == 3 :
+				Radius = float(input("Enter The Radius Of Your Circle : "))
+				print("What Unit You Prefer? :")
+				Unit = int(input("1. cm² / 2. m² / 3. km² :"))
+				Diameter = pow(Radius ,2)
+				if Unit == 1 :	
+					print(f"The Circle Diameter is :{round(Diameter,2):5}cm²")
+					print("1. Basic Calculating")
+					print("2. Square Area")
+					print("3. Circle Diameter")
+					print("4. Circle Area")
+					print("5. triangle hypotenuse")
+					UserInputCalc = int(input(">"))
+				elif Unit == 2 :	
+					print(f"The Circle Diameter is :{round(Diameter,2):5}m²")
+					print("1. Basic Calculating")
+					print("2. Square Area")
+					print("3. Circle Diameter")
+					print("4. Circle Area")
+					print("5. triangle hypotenuse")
+					UserInputCalc = int(input(">"))
+				elif Unit == 3 :	
+					print(f"The Circle Diameter is :{round(Diameter,2):5}km²")
+					print("1. Basic Calculating")
+					print("2. Square Area")
+					print("3. Circle Diameter")
+					print("4. Circle Area")
+					print("5. triangle hypotenuse")
+					UserInputCalc = int(input(">"))
+				else :
+					print("× Invalid Unit ×")
+					Radius = float(input("Enter The Radius Of Your Circle : "))
+					print("What Unit You Prefer? :")
+					Unit = int(input("1. cm² / 2. m² / 3. km² :"))
+					Diameter = pow(Radius ,2)
+  # Circle Area Calculator :
+			elif UserInputCalc == 4 :
+				Radius = float(input("Enter The Radius of Your Circle :"))
+				print("What Unit You Prefer? :")
+				Unit = int(input("1. cm² / 2. m² / 3. km² :"))
+				Area = math.pi * pow(Radius ,2)
+				if Unit == 1 :	
+					print(f"The Circle Area is :{round(Area,2):5}cm²")
+					print("1. Basic Calculating")
+					print("2. Square Area")
+					print("3. Circle Diameter")
+					print("4. Circle Area")
+					print("5. triangle hypotenuse")
+					UserInputCalc = int(input(">"))
+				elif Unit == 2 :	
+					print(f"The Circle Area is :{round(Area,2):5}m²")
+					print("1. Basic Calculating")
+					print("2. Square Area")
+					print("3. Circle Diameter")
+					print("4. Circle Area")
+					print("5. triangle hypotenuse")
+					UserInputCalc = int(input(">"))
+				elif Unit == 3 :	
+					print(f"The Circle Area is :{round(Area,2):5}km²")
+					print("1. Basic Calculating")
+					print("2. Square Area")
+					print("3. Circle Diameter")
+					print("4. Circle Area")
+					print("5. triangle hypotenuse")
+					UserInputCalc = int(input(">"))
+			elif UserInputCalc == 5 :
+				A = float(input("Enter Side A :"))
+				B = float(input("Enter Side B :"))
+				print("What Unit You Prefer? :")
+				Unit = int(input("1. cm² / 2. m² / 3. km² :"))
+				C = math.sqrt((pow(A,2)) + (pow(B,2)))
+				if Unit == 1 :	
+					print(f"The Triangle Hypotenuse is :{round(C,2):5}cm²")
+					print("1. Basic Calculating")
+					print("2. Square Area")
+					print("3. Circle Diameter")
+					print("4. Circle Area")
+					print("5. triangle hypotenuse")
+					UserInputCalc = int(input(">"))
+				elif Unit == 2 :
+					print(f"The Triangle Hypotenuse is :{round(C,2):5}m²")
+					print("1. Basic Calculating")
+					print("2. Square Area")
+					print("3. Circle Diameter")
+					print("4. Circle Area")
+					print("5. triangle hypotenuse")
+					UserInputCalc = int(input(">"))
+				elif Unit == 3 :
+					print(f"The Triangle Hypotenuse is :{round(C,2):5}km²")
+					print("1. Basic Calculating")
+					print("2. Square Area")
+					print("3. Circle Diameter")
+					print("4. Circle Area")
+					print("5. triangle hypotenuse")
+					UserInputCalc = int(input(">"))
+				else :
+					print("× Invalid Unit ×")
+					A = float(input("Enter Side A :"))
+					B = float(input("Enter Side B :"))
+					print("What Unit You Prefer? :")
+					Unit = int(input("1. cm² / 2. m² / 3. km² :"))
+					C = math.sqrt((pow(A,2)) + (pow(B,2)))
+			else :
+				print("× Invalid Application ×")
+				UserInputCalc = int(input(">"))
+# About :
+	elif UserInput == 2 :
+		print("About :")
+		print("What is P.D.O.S ? : A Fun Little Project Made By @SalimDZ, it Was Made For The Porpos of Mushing Multiple Tasks and Programs Into One Giant Pile Of Sh- a Programs :) , Replacting The Old OG MC-DOS From Microsoft From The Early Generations Of Computers.")
+		print("NOTE : This is Not An Official Python Project, And You Have The Right To Modify it And Repost it Only if You Mention Me @SalimDZ in Credits.")
+		UserInput = int(input(">"))
+	else :
+		print("× Invalid Application ×")
+		UserInput = int(input(">"))
