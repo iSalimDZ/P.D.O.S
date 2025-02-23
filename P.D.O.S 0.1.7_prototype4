@@ -1,24 +1,30 @@
 import math
 # Main Menu :
-print("Welcome To P.D.O.S 0.1.5_prototype3 (Python Desk Operating System), Type One Of the Numbers Below For Each Command :")
-print("1. Calculator ")
-print("2. About")
-print("3. Shut Down ")
+print("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
+print("Welcome To P.D.O.S 0.1.7_prototype4 (Python Desk Operating System), Type One Of the Numbers Below For Each Command :")
+print("1. Calculator")
+print("2. Notepad (! in Development !)")
+print("3. Games (! Early Demo !)")
+print("4. About")
+print("5. Shut Down")
 UserInput = int(input(">"))
 # Shut Down :
 while UserInput :
-	if UserInput == 3 :
+	if UserInput == 5 :
 		print("Are You Sure You Want To Shut Down? :")
 		print("1. Yes / 2.No ")
 		UserInput = int(input(">"))
 		if UserInput == 1 :
 			print("• Shutting Down... •")
+			print("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
 			break
 		elif UserInput == 2 :
 			print("• Task Cancelled •")
-			print("1. Calculator ")
-			print("3. About")
-			print("0. Shut Down ")
+			print("1. Calculator")
+			print("2. Notepad")
+			print("3. Games")
+			print("4. About")
+			print("5. Shut Down")
 			UserInput = int(input(">"))
 		else :
 			print("× Invalid Task ×")
@@ -32,6 +38,7 @@ while UserInput :
 		print("3. Circle Diameter")
 		print("4. Circle Area")
 		print("5. triangle hypotenuse")
+		print("6. Geometric Vector Position")
 		UserInputCalc = int(input(">"))
  # Calculating :
   # Basic Calculator :  	
@@ -65,6 +72,7 @@ while UserInput :
 				print("3. Circle Diameter")
 				print("4. Circle Area")
 				print("5. triangle hypotenuse")
+				print("6. Geometric Vector Position")
 				UserInputCalc = int(input(">"))
   # Square Area Calculator :
 			elif UserInputCalc == 2 :
@@ -79,6 +87,7 @@ while UserInput :
 					print("3. Circle Diameter")
 					print("4. Circle Area")
 					print("5. triangle hypotenuse")
+					print("6. Geometric Vector Position")
 					UserInputCalc = int(input(">"))
 				elif Unit == 2 :	
 					print(f"The Square Area is :{round(Area,2):5}m²")
@@ -87,6 +96,7 @@ while UserInput :
 					print("3. Circle Diameter")
 					print("4. Circle Area")
 					print("5. triangle hypotenuse")
+					print("6. Geometric Vector Position")
 					UserInputCalc = int(input(">"))
 				elif Unit == 3 :	
 					print(f"The Square Area is :{round(Area,2):5}km²")
@@ -95,6 +105,7 @@ while UserInput :
 					print("3. Circle Diameter")
 					print("4. Circle Area")
 					print("5. triangle hypotenuse")
+					print("6. Geometric Vector Position")
 					UserInputCalc = int(input(">"))
 				else :
 					print("× Invalid Values Or Operator ×")
@@ -115,6 +126,7 @@ while UserInput :
 					print("3. Circle Diameter")
 					print("4. Circle Area")
 					print("5. triangle hypotenuse")
+					print("6. Geometric Vector Position")
 					UserInputCalc = int(input(">"))
 				elif Unit == 2 :	
 					print(f"The Circle Diameter is :{round(Diameter,2):5}m²")
@@ -123,6 +135,7 @@ while UserInput :
 					print("3. Circle Diameter")
 					print("4. Circle Area")
 					print("5. triangle hypotenuse")
+					print("6. Geometric Vector Position")
 					UserInputCalc = int(input(">"))
 				elif Unit == 3 :	
 					print(f"The Circle Diameter is :{round(Diameter,2):5}km²")
@@ -131,6 +144,7 @@ while UserInput :
 					print("3. Circle Diameter")
 					print("4. Circle Area")
 					print("5. triangle hypotenuse")
+					print("6. Geometric Vector Position")
 					UserInputCalc = int(input(">"))
 				else :
 					print("× Invalid Unit ×")
@@ -151,6 +165,7 @@ while UserInput :
 					print("3. Circle Diameter")
 					print("4. Circle Area")
 					print("5. triangle hypotenuse")
+					print("6. Geometric Vector Position")
 					UserInputCalc = int(input(">"))
 				elif Unit == 2 :	
 					print(f"The Circle Area is :{round(Area,2):5}m²")
@@ -159,6 +174,7 @@ while UserInput :
 					print("3. Circle Diameter")
 					print("4. Circle Area")
 					print("5. triangle hypotenuse")
+					print("6. Geometric Vector Position")
 					UserInputCalc = int(input(">"))
 				elif Unit == 3 :	
 					print(f"The Circle Area is :{round(Area,2):5}km²")
@@ -167,15 +183,16 @@ while UserInput :
 					print("3. Circle Diameter")
 					print("4. Circle Area")
 					print("5. triangle hypotenuse")
+					print("6. Geometric Vector Position")
 					UserInputCalc = int(input(">"))
 			elif UserInputCalc == 5 :
-				A = float(input("Enter Side A :"))
-				B = float(input("Enter Side B :"))
+				A = float(input("Enter Side AB :"))
+				B = float(input("Enter Side BC :"))
 				print("What Unit You Prefer? :")
 				Unit = int(input("1. cm² / 2. m² / 3. km² :"))
 				C = math.sqrt((pow(A,2)) + (pow(B,2)))
 				if Unit == 1 :	
-					print(f"The Triangle Hypotenuse is :{round(C,2):5}cm²")
+					print(f"The Triangle Hypotenuse / AC is :{round(C,2):5}cm²")
 					print("1. Basic Calculating")
 					print("2. Square Area")
 					print("3. Circle Diameter")
@@ -183,20 +200,22 @@ while UserInput :
 					print("5. triangle hypotenuse")
 					UserInputCalc = int(input(">"))
 				elif Unit == 2 :
-					print(f"The Triangle Hypotenuse is :{round(C,2):5}m²")
+					print(f"The Triangle Hypotenuse / AC is :{round(C,2):5}m²")
 					print("1. Basic Calculating")
 					print("2. Square Area")
 					print("3. Circle Diameter")
 					print("4. Circle Area")
 					print("5. triangle hypotenuse")
+					print("6. Geometric Vector Position")
 					UserInputCalc = int(input(">"))
 				elif Unit == 3 :
-					print(f"The Triangle Hypotenuse is :{round(C,2):5}km²")
+					print(f"The Triangle Hypotenuse / AC is :{round(C,2):5}km²")
 					print("1. Basic Calculating")
 					print("2. Square Area")
 					print("3. Circle Diameter")
 					print("4. Circle Area")
 					print("5. triangle hypotenuse")
+					print("6. Geometric Vector Position")
 					UserInputCalc = int(input(">"))
 				else :
 					print("× Invalid Unit ×")
@@ -205,15 +224,110 @@ while UserInput :
 					print("What Unit You Prefer? :")
 					Unit = int(input("1. cm² / 2. m² / 3. km² :"))
 					C = math.sqrt((pow(A,2)) + (pow(B,2)))
+  # Geometric Vector Position Calculator :
+			elif UserInputCalc == 6 :
+				xa = float(input("Enter A's x axis :"))
+				ya = float(input("Enter A's y axis :"))
+				xb = float(input("Enter B's x axis :"))
+				yb = float(input("Enter B's y axis :"))
+				ab = xb - xa , yb - ya
+				print(f"The Geometric Vector / AB Position is :{ab}")
+				print("1. Basic Calculating")
+				print("2. Square Area")
+				print("3. Circle Diameter")
+				print("4. Circle Area")
+				print("5. triangle hypotenuse")
+				print("6. Geometric Vector Position")
+				UserInputCalc = int(input(">"))
 			else :
 				print("× Invalid Application ×")
 				UserInputCalc = int(input(">"))
-# About :
+# Notepad :
 	elif UserInput == 2 :
+		input()
+# Games :
+	elif UserInput == 3 :
+ # Main Menu :
+		print("Choose What Game To Play :")
+		print("1. Quiz Games (! Early Demo !)")
+		UserInputGame = int(input(">"))
+		while UserInputGame :
+  # Quiz Games :
+			if UserInputGame == 1 :
+				print("Welcome To Quiz Games, Type One Of Numbers Below For Eash Quiz To Play :")
+   # Main Menu :
+				print("1. Math Quiz")
+				print("2. Python Quiz")
+				UserInputinGame = int(input(">"))
+    # Math Quiz :
+				if UserInputinGame == 1 :
+					print("Let it Start!!!")
+					print("1) What is The Result Of Dividing 69 By 2 ?")
+					print("1. 36 / 2. 34.5 / 3. 32.5")
+					Question1 = int(input(">"))
+					if Question1 == 2 :
+						print("That's Right, Good Job ! Now Let's Move Out...")
+						print("2) What is The Multiplication Of 210 By 4 ?")
+						print("1. 840 / 2. 805 / 3. 815")
+						Question2 = int(input(">"))
+						if Question2 == 1 :
+							print("That's Right, Good Job ! Now Let's Move Out...")
+							print("3) What is The Square Root Of 2025 ?")
+							print("1. 45 / 2. 40 / 3. 50")
+							Question3 = int(input(">"))
+							if Question3 == 1 :
+								print("That's Right, Good Job ! Now Let's Move Out...")
+								print("4) Ok, 2x - 6 = 0 , How Much is x ?")
+								print("1. 4 / 2. 6 / 3. 3")
+								Question4 = int(input(">"))
+								if Question4 == 3 :
+									print("That's Right, Good Job ! Now Let's Move Out...")
+									print("5) Ok, 3x - 5 = 0 , How Much is x ?")
+									print("1. 5|3 / 2. 1.5 / 3. 2")
+									Question5 = int(input(">"))
+									if Question5 == 1 :
+										print("That's Right, Good Job ! You Have Completed The Math Quiz, Hope You Enjoyed, This is an Early Demo, Thanks For Playing, See You Soon ;> !!!...")
+										break
+									else :
+										print("Sorry, You're Wrong, Try Again...")
+										break
+										print("1. Quiz Games (! Early Demo !)")
+								else :
+									print("Sorry, You're Wrong, Try Again...")
+									break
+									print("1. Quiz Games (! Early Demo !)")
+							else :
+								print("Sorry, You're Wrong, Try Again...")
+								break
+								print("1. Quiz Games (! Early Demo !)")
+						else :
+							print("Sorry, You're Wrong, Try Again...")
+							break
+							print("1. Quiz Games (! Early Demo !)")
+					else :
+						print("Sorry, You're Wrong, Try Again...")
+						break
+						print("1. Quiz Games (! Early Demo !)")
+    # Python Quiz :
+				elif UserInputinGame == 2 :
+					print("× Sorry This Task is Under Development ×")
+					UserInputinGame = int(input(">"))
+				else :
+					print("× Invalid Task ×")
+					break
+					UserInputinGame = int(input(">"))
+			
+			else :
+				print("× Invalid Application ×")
+				UserInputGame = int(input(">"))
+			
+# About :
+	elif UserInput == 4 :
 		print("About :")
 		print("What is P.D.O.S ? : A Fun Little Project Made By @SalimDZ, it Was Made For The Porpos of Mushing Multiple Tasks and Programs Into One Giant Pile Of Sh- a Programs :) , Replacting The Old OG MC-DOS From Microsoft From The Early Generations Of Computers.")
 		print("NOTE : This is Not An Official Python Project, And You Have The Right To Modify it And Repost it Only if You Mention Me @SalimDZ in Credits.")
 		UserInput = int(input(">"))
+# Invalid Application :
 	else :
 		print("× Invalid Application ×")
-		UserInput = int(input(">"))
+		UserInput = int(input(">"))(input(">"))
